@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- all other head tags must come after -->
+	<title>my swag colors</title>
+
+	<!-- SEO *must be edited*-->
+	<meta name="description" content="site giving you matching colors to wear based on your eyecolor and hair color">
+	<meta name="keywords" content="fashion, fashion advice, styling, looking, good, eyecolor, hair color">
+	<meta name="author" content="Kristina Traeger">
+
+	<!-- Style sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<header class="center-block col-xs-8">
+				<h1>My Swag Colors</h1>
+				<h3>Want to swag up your style?</h3>
+				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. But how do you figure out which colors look best on you? Our swag color generator will tell you which colors look best on you, considering your hair color, your eye color and skin tone. Try it out!</p>
+			</header>
+			
+		</div>
+
+		<div class="row ">
+			<form id="userInput" class="col-xs-8 center-block">
+				<p>What color is your hair?</p>
+				<input id="hairColor" placeholder="type in blond, brunette, black or red">
+				<p>What color are your eyes?</p>
+				<input id="eyeColor" placeholder="type in brown, blue, green">
+				<br>
+				<p>What tone is your skin?</p>
+				<input id="skinTone" placeholder="type in warm or cool">
+				<br>
+				<button type="button" onclick="getInfo()" class="btn">tell me my swag colors</button>
+			</form>
+		</div>
+
+		<div class="row">
+			<div id="result">
+			</div>
+		</div>
+
+	</div>
+
+	<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Plugins -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
