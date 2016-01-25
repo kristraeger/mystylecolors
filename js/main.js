@@ -12,14 +12,14 @@ function SwagStyle(hairColor, eyeColor, skinTone, swagColors) {
 
 var SwagStyleArray = new Array ();
 
-SwagStyleArray[0] = new SwagStyle("blond","brown","cool","bl-br-c");
-SwagStyleArray[1] = new SwagStyle("blond","brown","warm","bl-br-w");
+SwagStyleArray[0] = new SwagStyle("blonde","brown","cool","bl-br-c");
+SwagStyleArray[1] = new SwagStyle("blonde","brown","warm","bl-br-w");
 
-SwagStyleArray[2] = new SwagStyle("blond","blue","cool","bl-bl-c");
-SwagStyleArray[3] = new SwagStyle("blond","blue","warm","bl-bl-w");
+SwagStyleArray[2] = new SwagStyle("blonde","blue","cool","bl-bl-c");
+SwagStyleArray[3] = new SwagStyle("blonde","blue","warm","bl-bl-w");
 
-SwagStyleArray[4] = new SwagStyle("blond","green","cool","bl-gr-c");
-SwagStyleArray[5] = new SwagStyle("blond","green","warm","bl-gr-w");
+SwagStyleArray[4] = new SwagStyle("blonde","green","cool","bl-gr-c");
+SwagStyleArray[5] = new SwagStyle("blonde","green","warm","bl-gr-w");
 
 SwagStyleArray[6] = new SwagStyle("brown","brown","cool","br-br-c");
 SwagStyleArray[7] = new SwagStyle("brown","brown","warm","br-br-w");
@@ -49,26 +49,50 @@ SwagStyleArray[22] = new SwagStyle("black","green","cool","bc-gr-c");
 SwagStyleArray[23] = new SwagStyle("black","green","warm","bc-gr-w");
 
 
-// display result in #result
+// show result based on user input
 
 function getInfo() {
-	//take user input and make it lower case
-	var hairColor = document.getElementById("hairColor").value.toLowerCase()
-	var eyeColor = document.getElementById("eyeColor").value.toLowerCase()
-	var skinTone = document.getElementById("skinTone").value.toLowerCase()
+	//check for values of userinfo and set them to variables
+	var inputHair = document.getElementsByClassName("hairColor")
 
-	//give input a unique swag ID
+	
+
+
+	//give input a unique ID
 	var swagIDinput = hairColor + eyeColor + skinTone
 	console.log(swagIDinput)
 
-	//loop through array until it finds the object with matching Swag ID
+	//loop through array until it finds the object with matching ID
 	for (var i = 0; i < SwagStyleArray.length; i++) {
 		if (swagIDinput === SwagStyleArray[i].swagID) {
-			console.log(SwagStyleArray[i].swagColors)
+			var result = SwagStyleArray[i].swagColors
+			console.log(result)
 			break
 		} else {
 			console.log("did not find")
 		}
-		
 	}
+
+	// result modal
+	document.getElementById("resultLabel").innerHTML = "Your Swag Colors"
+	document.getElementById("resultBody").innerHTML = result
 }
+
+//clear values when close button is clicked
+
+function clearForm(){
+	document.getElementById("userInput").reset();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

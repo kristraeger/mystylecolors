@@ -23,30 +23,80 @@
 			<header class="center-block col-xs-8">
 				<h1>My Swag Colors</h1>
 				<h3>Want to swag up your style?</h3>
-				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. But how do you figure out which colors look best on you? Our swag color generator will tell you which colors look best on you, considering your hair color, your eye color and skin tone. Try it out!</p>
-			</header>
-			
+				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
+
+				<h4>But how do you figure out which colors look best on you?</h4>
+
+				<p>Our swag color generator will tell you which colors look best on you, considering your hair color, your eye color and skin tone. Try it out!</p>
+			</header>	
 		</div>
 
 		<div class="row ">
-			<form id="userInput" class="col-xs-8 center-block">
-				<p>What color is your hair?</p>
-				<input id="hairColor" placeholder="type in blond, brunette, black or red">
-				<p>What color are your eyes?</p>
-				<input id="eyeColor" placeholder="type in brown, blue, green">
-				<br>
-				<p>What tone is your skin?</p>
-				<input id="skinTone" placeholder="type in warm or cool">
-				<br>
-				<button type="button" onclick="getInfo()" class="btn">tell me my swag colors</button>
+			<form id="userInput" class="col-xs-8">
+
+				<div class="btn-group col-xs-12"  data-toggle="buttons" id="hairColor">
+					<h5>Which color is your hair?</h5>
+					<label class="btn btn-primary">
+						<input id="hairColor1" autocomplete="off" type="radio" name="options">blonde
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="hairColor2" autocomplete="off" type="radio" name="options">red
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="hairColor3" autocomplete="off" type="radio" name="options">brunette
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="hairColor4" autocomplete="off" type="radio" name="options">black
+	  				</label>
+	  			</div>
+
+	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="eyeColor">
+					<h5>What color do your eyes have?</h5>
+					<label class="btn btn-primary">
+						<input id="eyeColor1" autocomplete="off" type="radio" name="options">brown
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="eyeColor2" autocomplete="off" type="radio" name="options">blue
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="eyeColor3" autocomplete="off" type="radio" name="options">green
+	  				</label>
+	  			</div>
+
+	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="skinTone">
+					<h5>What skin tone do you have?</h5>
+					<label class="btn btn-primary">
+						<input id="skinTone1" autocomplete="off" type="radio" name="options">brown
+	  				</label>
+	  				<label class="btn btn-primary">
+						<input id="skinTone2" autocomplete="off" type="radio" name="options">blue
+	  				</label>
+	  			</div>
+
+				<!-- Button trigger modal -->
+				<div id="submitBtn" class="btn-group col-xs-12">
+					<button type="button" onclick="getInfo()" class="btn" data-toggle="modal" data-target="#resultModal">Enlighten me! </button>
+				</div>
+
 			</form>
 		</div>
 
-		<div class="row">
-			<div id="result">
-			</div>
+		<!-- Modal -->
+		<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="resultLabel"></h4>
+		      </div>
+		      <div class="modal-body" id="resultBody">xx
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" onclick="clearForm()"class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
 		</div>
-
 	</div>
 
 	<!-- jQuery -->
