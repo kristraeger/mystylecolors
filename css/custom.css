@@ -4,3 +4,7 @@
 	min-height: 1px;
 }
 
+#submitBtn:focus {
+	outline: none;
+}
+

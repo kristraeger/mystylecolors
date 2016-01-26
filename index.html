@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- all other head tags must come after -->
-	<title>my swag colors</title>
+	<title>My Style Colors</title>
 
 	<!-- SEO *must be edited*-->
 	<meta name="description" content="site giving you matching colors to wear based on your eyecolor and hair color">
@@ -20,79 +20,82 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<header class="center-block col-xs-8">
-				<h1>My Swag Colors</h1>
-				<h3>Want to swag up your style?</h3>
+			<header class="col-xs-8">
+				<h1>My Style Colors</h1>
 				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
 
 				<h4>But how do you figure out which colors look best on you?</h4>
 
-				<p>Our swag color generator will tell you which colors look best on you, considering your hair color, your eye color and skin tone. Try it out!</p>
+				<p>Our style color generator will tell which colors you should wear and which colors you should avoid, considering your hair color, your eye color and skin tone. Try it out!</p>
 			</header>	
 		</div>
+	</div>
+
+	<div class="container">
 
 		<div class="row ">
-			<form id="userInput" class="col-xs-8">
+			<form id="userInput">
 
-				<div class="btn-group col-xs-12"  data-toggle="buttons" id="hairColor">
-					<h5>Which color is your hair?</h5>
+				<div class="btn-group col-xs-8"  data-toggle="buttons" id="hairColor">
+					<h5>My hair is:</h5>
 					<label class="btn btn-primary">
-						<input id="hairColor1" autocomplete="off" type="radio" name="options">blonde
+						<input id="hairColor1" autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="hairColor2" autocomplete="off" type="radio" name="options">red
+						<input id="hairColor2" autocomplete="off" type="radio" name="red" class="input-hair">red
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="hairColor3" autocomplete="off" type="radio" name="options">brunette
+						<input id="hairColor3" autocomplete="off" type="radio" name="brunette" class="input-hair">brunette
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="hairColor4" autocomplete="off" type="radio" name="options">black
+						<input id="hairColor4" autocomplete="off" type="radio" name="black" class="input-hair">black
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="eyeColor">
-					<h5>What color do your eyes have?</h5>
+	  			<div class="btn-group col-xs-8" data-toggle="buttons" id="eyeColor">
+					<h5>My eyes are:</h5>
 					<label class="btn btn-primary">
-						<input id="eyeColor1" autocomplete="off" type="radio" name="options">brown
+						<input id="eyeColor1" autocomplete="off" type="radio" name="brown" class="input-eye">brown
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="eyeColor2" autocomplete="off" type="radio" name="options">blue
+						<input id="eyeColor2" autocomplete="off" type="radio" name="blue" class="input-eye">blue
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="eyeColor3" autocomplete="off" type="radio" name="options">green
+						<input id="eyeColor3" autocomplete="off" type="radio" name="green" class="input-eye">green
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="skinTone">
-					<h5>What skin tone do you have?</h5>
+	  			<div class="btn-group col-xs-8" data-toggle="buttons" id="skinTone">
+					<h5>My skin tone is:</h5>
 					<label class="btn btn-primary">
-						<input id="skinTone1" autocomplete="off" type="radio" name="options">brown
+						<input id="skinTone1" autocomplete="off" type="radio" name="warm" class="input-skin">warm
 	  				</label>
 	  				<label class="btn btn-primary">
-						<input id="skinTone2" autocomplete="off" type="radio" name="options">blue
+						<input id="skinTone2" autocomplete="off" type="radio" name="cool" class="input-skin">cool
 	  				</label>
 	  			</div>
 
 				<!-- Button trigger modal -->
-				<div id="submitBtn" class="btn-group col-xs-12">
-					<button type="button" onclick="getInfo()" class="btn" data-toggle="modal" data-target="#resultModal">Enlighten me! </button>
+				<div class="btn-group col-xs-8">
+					<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal">Generate My Style Colors! </button>
 				</div>
 
 			</form>
-		</div>
+		</div> <!--./ row-->
+	</div> <!--./ container-->
+		
 
 		<!-- Modal -->
 		<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <h4 class="modal-title" id="resultLabel"></h4>
 		      </div>
 		      <div class="modal-body" id="resultBody">xx
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" onclick="clearForm()"class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultButton">Great, thanks!</button>
 		      </div>
 		    </div>
 		  </div>

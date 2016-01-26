@@ -49,40 +49,77 @@ SwagStyleArray[22] = new SwagStyle("black","green","cool","bc-gr-c");
 SwagStyleArray[23] = new SwagStyle("black","green","warm","bc-gr-w");
 
 
+//create variable from array with input values
+var inputHair = document.getElementsByClassName("input-hair")
+var inputEye = document.getElementsByClassName("input-eye")
+var inputSkin = document.getElementsByClassName("input-skin")
+
 // show result based on user input
 
 function getInfo() {
-	//check for values of userinfo and set them to variables
-	var inputHair = document.getElementsByClassName("hairColor")
 
-	
+	//loop through each input array and find checked value
+		//find hairColor
+	for (var i = 0; i < inputHair.length; i++ ) {
+		if(inputHair[i].checked) {
+			var hairColor = (inputHair[i].name)
+			break
+		}
+	}
+	console.log(hairColor)
 
+		//find eyeColor
+	for (var i = 0; i < inputEye.length; i++ ) {
+		if(inputEye[i].checked) {
+			var eyeColor = (inputEye[i].name)
+			break
+		}
+	}
+	console.log(eyeColor)
 
-	//give input a unique ID
+		//find skinTone
+	for (var i = 0; i < inputSkin.length; i++ ) {
+		if(inputSkin[i].checked) {
+			var skinTone = (inputSkin[i].name)
+			break
+		}
+	}
+	console.log(skinTone)
+
+	//give checked value a unique ID
 	var swagIDinput = hairColor + eyeColor + skinTone
 	console.log(swagIDinput)
 
-	//loop through array until it finds the object with matching ID
+	//loop through array containing different styles and find matching ID
 	for (var i = 0; i < SwagStyleArray.length; i++) {
 		if (swagIDinput === SwagStyleArray[i].swagID) {
 			var result = SwagStyleArray[i].swagColors
 			console.log(result)
 			break
-		} else {
-			console.log("did not find")
-		}
+		} 
 	}
 
-	// result modal
-	document.getElementById("resultLabel").innerHTML = "Your Swag Colors"
-	document.getElementById("resultBody").innerHTML = result
+	// show matching content in modal
+	if ( result != undefined ) {
+		document.getElementById("resultLabel").innerHTML = "Say hi to your new Style!"
+		document.getElementById("resultBody").innerHTML = result
+		document.getElementById("resultButton").innerHTML = "Great, thanks!"
+	} else {
+		document.getElementById("resultLabel").innerHTML = "Hmmmm...."
+		document.getElementById("resultBody").innerHTML = "Did you tell us your hair color, your eye color and the tone of your skin? Simply choose your answer from the questionnaire :)"
+		document.getElementById("resultButton").innerHTML = "Will do!"
+	}
+	
 }
 
-//clear values when close button is clicked
+//clear values when click on close button
 
 function clearForm(){
+	$ ('.active').removeClass('active')
 	document.getElementById("userInput").reset();
 }
+
+
 
 
 
