@@ -124,12 +124,13 @@ function getInfo() {
 	if ( result != undefined ) {
 		document.getElementById("resultLabel").innerHTML = "Say Hi To Your New Favorite Colors!"
 		resultContent.style.display = "block"
-		document.getElementById("resultBtn").innerHTML = "Awesome!! Thanks for the info!"
+		document.getElementById("resultBtn").innerHTML = '<i class="fa fa-times-circle"></i>'+" Got it!"
 	} else {
 		$('.standard').hide()
+		$('#referLink').hide()
 		document.getElementById("resultLabel").innerHTML = "Hmmmm...."
 		document.getElementById("error").style.display = "block"
-		document.getElementById("resultBtn").innerHTML = "Will do!"
+		document.getElementById("resultBtn").innerHTML = '<i class="fa fa-times-circle"></i>'+" Will do!"
 	}
 	
 }
@@ -139,6 +140,9 @@ function clearForm(){
 	$ ('.active').removeClass('active')
 	document.getElementById("userInput").reset();
 	$('.result-option').hide()
+	$('.standard').show()
+	$('#referLink').show()
+	document.getElementById("resultBtn").innerHTML = ""
 }
 
 

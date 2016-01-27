@@ -1,7 +1,52 @@
-#submitBtn {
-	margin-top: 10px;
-	margin-bottom: 10px;
+body {
+	font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1, h4, h5 {
+	font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+	color: black;
+	background-color: white;
+	font-weight: 400;
+	line-height: 2em;
+	width: 100%;
+	letter-spacing: 0.1em;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h4 {
+	color: white;
+	background-color: black;
+}
+
+h5 {
+	text-align: left;
+}
+
+#ctaTest {
+	display: inline-block;
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+
+#submitBtn{
+	margin: 30px auto;
 	min-height: 1px;
+	color: white;
+	background-color: black;
+	width: 50%;
+}
+
+#submitBtn:hover {
+	letter-spacing: 0.05em;
+	transition: letter-spacing 0.1s;
+}
+
+#resultBtn:hover {
+	letter-spacing: 0.05em;
+	transition: letter-spacing 0.2s;
 }
 
 #submitBtn:focus {
@@ -16,15 +61,156 @@
 	font-size: 10px;
 }
 
-.hide {
-	display: none;
+.row-centered {
+    text-align: center;
 }
 
-.show {
-	display: block;
+.col-centered {
+display: inline-block;
+float: none 
 }
+
+header {
+	margin-top: 50px;
+	text-align: center;
+}
+
+header, #userInput, #submitBtn, #submit, #resultBtn{
+	width: 50%;
+}
+
+#submit {
+	text-align: center;
+}
+
+header p {
+	text-align: left;
+	border: 1px solid black;
+	padding: 10px 5px;
+}
+
+#userInput .btn-group>.btn {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.btn-group {
+	display: block;
+	text-align: center;
+}
+
+.btn-group>.btn {
+	float: none;
+}
+
+.btn {
+	margin: 5px 0;
+
+}
+
+.btn,.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+	border-radius: 0px;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+.btnHair, .btnEye, .btnSkin {
+	display: inline-block;
+	box-sizing: border-box;	
+	margin-right:0;
+	margin-left: 0;
+}
+
+.btnHair {
+	width: 24.6%;
+}
+
+.btnEye {
+	width: 33%;
+}
+
+.btnSkin {
+	width: 49.5%;
+}
+
+#helpBtn {
+	color: black;
+}
+
+.btn.active {
+	font-weight: 700;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+#resultBtn:hover, #resultBtn:active {
+
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+#resultBtn {
+	color:white;
+	background-color: black;
+}
+
 
 /*media queries*/
+
+@media (max-width: 1258px) {
+
+.btnEye {
+	width: 32.5%;
+	}
+
+@media (max-width: 1186px) {
+	.btnHair {
+	width: 24.3%;
+	}
+
+@media (max-width: 768px) {
+	header, #userInput, #submit, #resultBtn{
+	width: 80%;
+	}
+
+	#submitBtn {
+		width: 50%;
+	}
+}
+
+@media (max-width: 690px) {
+	.btnHair {
+		width: 24.1%
+	}
+}
+
+@media (max-width: 642px) {
+	.btnSkin {
+		width: 49%
+	}
+
+	.btnHair {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	#submitBtn {
+		width: 100%;
+	}
+}
+}
+
+@media (max-width: 543px) {
+	.btnHair {
+		width: 24%;
+	}
+}
 
 /*small desktop and iPhone 6*/
 
@@ -32,6 +218,15 @@
 	.popover {
 		width: 200px;
 	}
+	header, #userInput, .btn-group, #submit, #submitBtn, #resultBtn {
+	width: 100%;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		line-height: 1.1em;
+	}
+
 }
 
 /*iPhone 5*/
@@ -40,9 +235,24 @@
 	.popover {
 		width: 150px;
 	}
+
+	.btnEye {
+		width: 32%;
+	}
+
+	#userInput .btn {
+		font-size: 10px;
+	}
+
+	#referLink {
+	font-size: 12px;
+	text-align: center;
+	}
 }
 
-#referLink {
-	font-size: 12px;
-	padding-right: 12px;
-}
+
+
+
+
+
+

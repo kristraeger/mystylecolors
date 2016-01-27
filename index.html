@@ -16,75 +16,77 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<!-- Google font -->
+	<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="container-fluid">
+		<header class="center-block">
+			<h1>What Colors Should I Wear?</h1>
+			<br><h4>Wear the Colors that Make Your Skin, Eyes and Hair Glow!</h4> <br>
+			<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
 
-	<div class="container">
-		<div class="row">
-			<header class="col-xs-12">
-				<h1>What Colors Should I Wear?</h1>
-				<h4>Wear the Colors that Make Your Skin, Eyes and Hair Glow!</h4>
-				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
+			<br><h4>But .... how do you figure out which colors look best on you?</h4><br>
 
-				<h4>But .... how do you figure out which colors look best on you?</h4>
-
-				<p>Answer the questionnaire below and we will tell which colors you should wear and which colors you should avoid, considering your hair color, your eye color and skin tone.</p>
-				<h4>Take the test!</h4>
-			</header>	
-		</div>
+			<p>Answer the questionnaire below and we will tell which colors you should wear and which colors you should avoid, considering your hair color, your eye color and skin tone.</p>
+		</header>
 	</div>
 
-	<div class="container">
 
-		<div class="row ">
-			<form id="userInput">
+	<div class="container-fluid">
 
-				<div class="btn-group col-xs-12"  data-toggle="buttons" id="hairColor">
+		<form class="center-block" id="userInput">
+
+				<br><h4 id="ctaTest">Take the test!</h4><br>
+
+				<div class="btn-group"  data-toggle="buttons" id="hairColor">
 					<h5>My hair is:</h5>
-					<label class="btn btn-primary">
-						<input id="hairColor1" autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
+					<label class="btn btnHair " id="hairColor1">
+						<input autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
 	  				</label>
-	  				<label class="btn btn-primary">
-						<input id="hairColor2" autocomplete="off" type="radio" name="red" class="input-hair">red
+	  				<label class="btn btnHair " id="hairColor2" >
+						<input autocomplete="off" type="radio" name="red" class="input-hair">red
 	  				</label>
-	  				<label class="btn btn-primary">
-						<input id="hairColor3" autocomplete="off" type="radio" name="brunette" class="input-hair">brunette
+	  				<label class="btn btnHair " id="hairColor3">
+						<input autocomplete="off" type="radio" name="brunette" class="input-hair">brunette
 	  				</label>
-	  				<label class="btn btn-primary">
+	  				<label class="btn btnHair ">
 						<input id="hairColor4" autocomplete="off" type="radio" name="black" class="input-hair">black
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="eyeColor">
+	  			<div class="btn-group" data-toggle="buttons" id="eyeColor">
 					<h5>My eyes are:</h5>
-					<label class="btn btn-primary">
+					<label class="btn btnEye">
 						<input id="eyeColor1" autocomplete="off" type="radio" name="brown" class="input-eye">brown
 	  				</label>
-	  				<label class="btn btn-primary">
+	  				<label class="btn btnEye">
 						<input id="eyeColor2" autocomplete="off" type="radio" name="blue" class="input-eye">blue
 	  				</label>
-	  				<label class="btn btn-primary">
+	  				<label class="btn btnEye">
 						<input id="eyeColor3" autocomplete="off" type="radio" name="green" class="input-eye">green
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="skinTone">
-					<h5>My skin tone is: <sup><a id="helpBtn"  class="btn btn-xs"type="button" data-toggle="popover" data-trigger="hover" title="How do you find out what skin tone you have?" data-content="Do the vein test! If the veins in your arm appear blue, you are cool toned and if they are greenish, you are warm toned."><i class="fa fa-question-circle"></i></a></sup></h5>
-					<label class="btn btn-primary">
+	  			<div class="btn-group" data-toggle="buttons" id="skinTone">
+					<h5>My skin tone is:<sup><a id="helpBtn"  class="btn btn-xs"type="button" data-toggle="popover" data-trigger="hover" title="How do you find out what skin tone you have?" data-content="Do the vein test! If the veins in your arm appear blue, you are cool toned and if they are greenish, you are warm toned."><i class="fa fa-question-circle"></i></a></sup></h5>
+					<label class="btn btnSkin">
 						<input id="skinTone1" autocomplete="off" type="radio" name="warm" class="input-skin">warm
 	  				</label>
-	  				<label class="btn btn-primary">
+	  				<label class="btn btnSkin">
 						<input id="skinTone2" autocomplete="off" type="radio" name="cool" class="input-skin">cool
 	  				</label>
 	  			</div>
 
-				<!-- Button trigger modal -->
-				<div class="btn-group col-xs-12">
-					<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal">Let magic happen!</button>
-				</div>
+				
+		</form> <!--./ userInput-->
 
-			</form>
-		</div> <!--./ row-->
+		<!-- Button trigger modal -->
+				<div class="btn-group center-block" id="submit">
+					<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal"><i class="fa fa-magic"></i> Let the magic happen</button>
+				</div>
 	</div> <!--./ container-->
 		
 
@@ -213,8 +215,10 @@
 
 		      </div> <!--/. resultBody-->
 		      <div class="modal-footer">
-		      	<span id="referLink"><a href="http://www.fashionlovemaker.com/" target="_blank">Yes, i want to work with a stylist!</a></span>
-		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultBtn"></button>
+		      	
+		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultBtn"><i class="fa fa-times-circle"></i> </button>
+
+		        <h5 id="referLink"><a href="http://www.fashionlovemaker.com/" target="_blank">Yes, i want to work with a stylist!</a></h5>
 		        
 		      </div>
 		    </div>
