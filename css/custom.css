@@ -8,6 +8,36 @@
 	outline: none;
 }
 
-#test {
-background-color: red;
+.popover{
+	width: 276px;
+}
+
+.popover, .popover-title {
+	font-size: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/*media queries*/
+
+/*small desktop and iPhone 6*/
+
+@media (max-width: 414px) {
+	.popover {
+		width: 200px;
+	}
+}
+
+/*iPhone 5*/
+
+@media (max-width: 320px) {
+	.popover {
+		width: 150px;
+	}
 }

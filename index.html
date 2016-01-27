@@ -18,10 +18,12 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
-			<header class="col-xs-8">
+			<header class="col-xs-12">
 				<h1>My Style Colors</h1>
+				<h3>Wear the Colors that Make Your Skin, Eyes and Hair Glow!</h3>
 				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
 
 				<h4>But how do you figure out which colors look best on you?</h4>
@@ -36,7 +38,7 @@
 		<div class="row ">
 			<form id="userInput">
 
-				<div class="btn-group col-xs-8"  data-toggle="buttons" id="hairColor">
+				<div class="btn-group col-xs-12"  data-toggle="buttons" id="hairColor">
 					<h5>My hair is:</h5>
 					<label class="btn btn-primary">
 						<input id="hairColor1" autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
@@ -52,7 +54,7 @@
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-8" data-toggle="buttons" id="eyeColor">
+	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="eyeColor">
 					<h5>My eyes are:</h5>
 					<label class="btn btn-primary">
 						<input id="eyeColor1" autocomplete="off" type="radio" name="brown" class="input-eye">brown
@@ -65,8 +67,8 @@
 	  				</label>
 	  			</div>
 
-	  			<div class="btn-group col-xs-8" data-toggle="buttons" id="skinTone">
-					<h5>My skin tone is:</h5>
+	  			<div class="btn-group col-xs-12" data-toggle="buttons" id="skinTone">
+					<h5>My skin tone is: <sup><a id="helpBtn"  class="btn btn-xs"type="button" data-toggle="popover" data-trigger="hover" title="How do you find out what skin tone you have?" data-content="Do the vein test! If the veins in your arm appear blue, you are cool toned and if they are greenish, you are warm toned."><i class="fa fa-question-circle"></i></a></sup></h5>
 					<label class="btn btn-primary">
 						<input id="skinTone1" autocomplete="off" type="radio" name="warm" class="input-skin">warm
 	  				</label>
@@ -76,10 +78,10 @@
 	  			</div>
 
 				<!-- Button trigger modal -->
-				<div class="btn-group col-xs-8">
+				<div class="btn-group col-xs-12">
 					<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal">Generate My Style Colors! </button>
 				</div>
-				
+
 			</form>
 		</div> <!--./ row-->
 	</div> <!--./ container-->
@@ -92,7 +94,10 @@
 		      <div class="modal-header">
 		        <h4 class="modal-title" id="resultLabel"></h4>
 		      </div>
-		      <div class="modal-body" id="resultBody">xx
+		      <div class="modal-body" id="resultBody">
+		      	<div id="bl-br-c" class="result-option">bl-br-c content</div>
+		      	<div id="bl-br-w" class="result-option">bl-br-w content</div>
+		      	<div id="error" class="result-option">Did you tell us your hair color, your eye color and the tone of your skin?</div>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultButton">Great, thanks!</button>

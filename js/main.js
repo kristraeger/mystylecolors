@@ -1,3 +1,13 @@
+// when document is ready, do
+
+	//initialize popover
+$(document).ready(function() {
+	$('[data-toggle="popover"]').popover()
+})
+
+// 	//hide results in modal
+$('.result-option').hide()
+
 // Swag Style Constructur
 
 function SwagStyle(hairColor, eyeColor, skinTone, swagColors) {
@@ -49,6 +59,7 @@ SwagStyleArray[22] = new SwagStyle("black","green","cool","bc-gr-c");
 SwagStyleArray[23] = new SwagStyle("black","green","warm","bc-gr-w");
 
 
+
 //create variable from array with input values
 var inputHair = document.getElementsByClassName("input-hair")
 var inputEye = document.getElementsByClassName("input-eye")
@@ -90,33 +101,43 @@ function getInfo() {
 	var swagIDinput = hairColor + eyeColor + skinTone
 	console.log(swagIDinput)
 
-	//loop through array containing different styles and find matching ID
+	//loop through array containing different style objects and find matching ID
 	for (var i = 0; i < SwagStyleArray.length; i++) {
 		if (swagIDinput === SwagStyleArray[i].swagID) {
 			var result = SwagStyleArray[i].swagColors
-			console.log(result)
 			break
 		} 
+	}
+	console.log(result)
+
+	//use result to find the matching result div to show
+	var resultOptionArr = document.getElementsByClassName("result-option")
+	
+	for (var i = 0; i < resultOptionArr.length; i++) {
+		if (result === resultOptionArr[i].id) {
+			var resultContent = resultOptionArr[i]
+			break
+		}
 	}
 
 	// show matching content in modal
 	if ( result != undefined ) {
-		document.getElementById("resultLabel").innerHTML = "Say hi to your new Style!"
-		document.getElementById("resultBody").innerHTML = result
+		document.getElementById("resultLabel").innerHTML = "Say hi to your new style!"
+		resultContent.style.display = "block"
 		document.getElementById("resultButton").innerHTML = "Great, thanks!"
 	} else {
 		document.getElementById("resultLabel").innerHTML = "Hmmmm...."
-		document.getElementById("resultBody").innerHTML = "Did you tell us your hair color, your eye color and the tone of your skin? Simply choose your answer from the questionnaire :)"
+		document.getElementById("error").style.display = "block"
 		document.getElementById("resultButton").innerHTML = "Will do!"
 	}
 	
 }
 
 //clear values when click on close button
-
 function clearForm(){
 	$ ('.active').removeClass('active')
 	document.getElementById("userInput").reset();
+	$('.result-option').hide()
 }
 
 
