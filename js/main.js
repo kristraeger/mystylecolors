@@ -122,13 +122,14 @@ function getInfo() {
 
 	// show matching content in modal
 	if ( result != undefined ) {
-		document.getElementById("resultLabel").innerHTML = "Say hi to your new style!"
+		document.getElementById("resultLabel").innerHTML = "Say Hi To Your New Favorite Colors!"
 		resultContent.style.display = "block"
-		document.getElementById("resultButton").innerHTML = "Great, thanks!"
+		document.getElementById("resultBtn").innerHTML = "Awesome!! Thanks for the info!"
 	} else {
+		$('.standard').hide()
 		document.getElementById("resultLabel").innerHTML = "Hmmmm...."
 		document.getElementById("error").style.display = "block"
-		document.getElementById("resultButton").innerHTML = "Will do!"
+		document.getElementById("resultBtn").innerHTML = "Will do!"
 	}
 	
 }
