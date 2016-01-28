@@ -3,6 +3,11 @@ body {
 	background: transparent;
 }
 
+a {
+	color: #4939ed;
+	text-decoration: none;
+}
+
 h1, h4, h5 , .popover{
 	font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
 	color: black;
@@ -36,6 +41,7 @@ h5 {
 	display: inline-block;
 	letter-spacing: 0.3em;
 	text-align: center;
+	cursor: default;
 }
 
 #submitBtn, #resultBtn{
@@ -162,7 +168,7 @@ header p {
 	color: black;
 }
 
-.btn.active {
+.btn.active, .btn.active:hover {
 	font-weight: 700;
 	background-color: black;
 	color: white;
@@ -179,6 +185,33 @@ header p {
 #referLink {
 	font-size: 12px;
 	text-align: center;
+}
+
+.result-option, .standard {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.standard h5, .result-tags h5 {
+	font-weight: 700
+}
+
+.result-tags h5 {
+	background-color: white;
+	display: inline;
+	margin-top:8px;
+	padding-left: 2px;
+}
+
+.result-tags {
+	background-image: url("../img/hello2.gif");
+	margin-bottom: 20px;
+	height: 115px;
+
+}
+
+.box {
+	padding-left: 5px;
 }
 
 /*bg animation*/
@@ -314,7 +347,7 @@ header p {
 	}
 }
 
-/*small desktop and iPhone 6*/
+/*small desktop and iPhone 6S*/
 
 @media (max-width: 414px) {
 	.popover {
@@ -331,6 +364,18 @@ header p {
 
 }
 
+/*iphone 6*/
+
+@media (max-width: 375px) {
+	.result-option, .standard {
+	padding-left: 1px;
+	padding-right: 1px;
+	}
+	#ctaTest {
+		cursor: pointer;
+	}
+}
+
 /*iPhone 5*/
 
 @media (max-width: 320px) {
@@ -344,6 +389,14 @@ header p {
 
 	#userInput .btn {
 		font-size: 10px;
+	}
+
+	.result-tags {
+		height: 150px;
+	}
+
+	.result-tags h5 {
+		font-size: 12px;
 	}
 
 }

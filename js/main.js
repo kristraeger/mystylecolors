@@ -3,10 +3,18 @@
 	//initialize popover
 $(document).ready(function() {
 	$('[data-toggle="popover"]').popover()
-})
 
-// 	//hide results in modal
-$('.result-option').hide()
+	// 	//hide results in modal
+	$('.result-option').hide()
+
+	// when user clicks cta test do:
+	$('#ctaTest').click(function (){
+	      //sites scrolls up so that test is on top
+	        $('html, body').animate({
+	           scrollTop: $('#scrolltest').offset().top
+	                }, 400, 'easeInCubic');
+	            });
+})
 
 // Swag Style Constructur
 
@@ -31,14 +39,14 @@ SwagStyleArray[3] = new SwagStyle("blonde","blue","warm","bl-bl-w");
 SwagStyleArray[4] = new SwagStyle("blonde","green","cool","bl-gr-c");
 SwagStyleArray[5] = new SwagStyle("blonde","green","warm","bl-gr-w");
 
-SwagStyleArray[6] = new SwagStyle("brown","brown","cool","br-br-c");
-SwagStyleArray[7] = new SwagStyle("brown","brown","warm","br-br-w");
+SwagStyleArray[6] = new SwagStyle("brunette","brown","cool","br-br-c");
+SwagStyleArray[7] = new SwagStyle("brunette","brown","warm","br-br-w");
 
-SwagStyleArray[8] = new SwagStyle("brown","blue","cool","br-bl-c");
-SwagStyleArray[9] = new SwagStyle("brown","blue","warm","br-bl-w");
+SwagStyleArray[8] = new SwagStyle("brunette","blue","cool","br-bl-c");
+SwagStyleArray[9] = new SwagStyle("brunette","blue","warm","br-bl-w");
 
-SwagStyleArray[10] = new SwagStyle("brown","green","cool","br-gr-c");
-SwagStyleArray[11] = new SwagStyle("brown","green","warm","br-gr-w");
+SwagStyleArray[10] = new SwagStyle("brunette","green","cool","br-gr-c");
+SwagStyleArray[11] = new SwagStyle("brunette","green","warm","br-gr-w");
 
 SwagStyleArray[12] = new SwagStyle("red","brown","cool","re-br-c");
 SwagStyleArray[13] = new SwagStyle("red","brown","warm","re-br-w");
