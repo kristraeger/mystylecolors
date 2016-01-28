@@ -124,13 +124,15 @@ function getInfo() {
 	if ( result != undefined ) {
 		document.getElementById("resultLabel").innerHTML = "Say Hi To Your New Favorite Colors!"
 		resultContent.style.display = "block"
-		document.getElementById("resultBtn").innerHTML = '<i class="fa fa-times-circle"></i>'+" Got it!"
+		document.getElementById("resultBtn").innerHTML = "Got it!"
+		$('.standard').show()
+		$('#referLink').show()
 	} else {
 		$('.standard').hide()
 		$('#referLink').hide()
 		document.getElementById("resultLabel").innerHTML = "Hmmmm...."
 		document.getElementById("error").style.display = "block"
-		document.getElementById("resultBtn").innerHTML = '<i class="fa fa-times-circle"></i>'+" Will do!"
+		document.getElementById("resultBtn").innerHTML = " Will do!"
 	}
 	
 }
@@ -140,8 +142,8 @@ function clearForm(){
 	$ ('.active').removeClass('active')
 	document.getElementById("userInput").reset();
 	$('.result-option').hide()
-	$('.standard').show()
-	$('#referLink').show()
+	$('.standard').hide()
+	$('#referLink').hide()
 	document.getElementById("resultBtn").innerHTML = ""
 }
 

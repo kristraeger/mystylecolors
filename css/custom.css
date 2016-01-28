@@ -1,8 +1,9 @@
 body {
 	font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
+	background: transparent;
 }
 
-h1, h4, h5 {
+h1, h4, h5 , .popover{
 	font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
 	color: black;
 	background-color: white;
@@ -10,6 +11,11 @@ h1, h4, h5 {
 	line-height: 2em;
 	width: 100%;
 	letter-spacing: 0.1em;
+	background-color: transparent;
+}
+
+.popover {
+	background-color: white;
 }
 
 h1 {
@@ -19,6 +25,7 @@ h1 {
 h4 {
 	color: white;
 	background-color: black;
+	font-size: 17px;
 }
 
 h5 {
@@ -31,22 +38,36 @@ h5 {
 	text-align: center;
 }
 
-#submitBtn{
-	margin: 30px auto;
-	min-height: 1px;
+#submitBtn, #resultBtn{
 	color: white;
 	background-color: black;
+	border: 1px solid gray;
+	border-style: double;]
+}
+
+#submitBtn {
+	margin: 30px auto;
+	min-height: 1px;
 	width: 50%;
 }
 
-#submitBtn:hover {
+#resultBtn {
+	width: 20%;
+}
+
+#submitBtn:hover, #resultBtn:hover  {
 	letter-spacing: 0.05em;
+	background-color: gray;
+}
+
+#submitBtn:hover {
 	transition: letter-spacing 0.1s;
+	transition: background-color 0.05s;
 }
 
 #resultBtn:hover {
-	letter-spacing: 0.05em;
 	transition: letter-spacing 0.2s;
+	transition: background-color 0.1s;
 }
 
 #submitBtn:focus {
@@ -75,7 +96,7 @@ header {
 	text-align: center;
 }
 
-header, #userInput, #submitBtn, #submit, #resultBtn{
+header, #userInput, #submitBtn, #submit {
 	width: 50%;
 }
 
@@ -87,6 +108,7 @@ header p {
 	text-align: left;
 	border: 1px solid black;
 	padding: 10px 5px;
+	background-color: white;
 }
 
 #userInput .btn-group>.btn {
@@ -101,6 +123,7 @@ header p {
 
 .btn-group>.btn {
 	float: none;
+	background-color: white;
 }
 
 .btn {
@@ -128,7 +151,7 @@ header p {
 }
 
 .btnEye {
-	width: 33%;
+	width: 32.7%;
 }
 
 .btnSkin {
@@ -141,24 +164,103 @@ header p {
 
 .btn.active {
 	font-weight: 700;
+	background-color: black;
+	color: white;
 }
 
 .modal-content {
 	border-radius: 0;
 }
 
-#resultBtn:hover, #resultBtn:active {
-
-}
-
 .modal-footer {
 	text-align: center;
 }
 
-#resultBtn {
-	color:white;
-	background-color: black;
+#referLink {
+	font-size: 12px;
+	text-align: center;
 }
+
+/*bg animation*/
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+#bg {
+	position: absolute;
+	top: -10px;
+	width:100%;
+	
+}
+
+#error h5 {
+	text-align: center;
+}
+
+
+#home {
+  clip-path: url(#cache);
+}
+
+#red {
+  fill: none;
+  opacity: 0.15;
+  stroke: #CE1B5F;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#light-blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
 
 
 /*media queries*/
@@ -175,7 +277,7 @@ header p {
 	}
 
 @media (max-width: 768px) {
-	header, #userInput, #submit, #resultBtn{
+	header, #userInput, #submit {
 	width: 80%;
 	}
 
@@ -244,10 +346,6 @@ header p {
 		font-size: 10px;
 	}
 
-	#referLink {
-	font-size: 12px;
-	text-align: center;
-	}
 }
 
 

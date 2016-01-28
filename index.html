@@ -22,86 +22,104 @@
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container-fluid">
-		<header class="center-block">
-			<h1>What Colors Should I Wear?</h1>
-			<br><h4>Wear the Colors that Make Your Skin, Eyes and Hair Glow!</h4> <br>
-			<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
+	<div id="wrapper">
+		<div class="container-fluid">
+			<header class="center-block">
+				<h1>What Colors Should I Wear?</h1>
+				<br><h4>Wear the Colors that Make Your Skin, Eyes and Hair Glow!</h4> <br>
+				<p>For every individual’s style, there is a palette of shades that will look absolutely fantastic, and some colors that just won’t work. </p>
 
-			<br><h4>But .... how do you figure out which colors look best on you?</h4><br>
+				<br><h4>But...how do you figure out which colors look best on you?</h4><br>
 
-			<p>Answer the questionnaire below and we will tell which colors you should wear and which colors you should avoid, considering your hair color, your eye color and skin tone.</p>
-		</header>
-	</div>
+				<p>Answer the questionnaire below and we will tell you which colors you should wear and which colors you should avoid, considering your hair color, your eye color and skin tone!</p>
+			</header>
+		</div>
 
 
-	<div class="container-fluid">
+		<div class="container-fluid">
 
-		<form class="center-block" id="userInput">
+			<form class="center-block" id="userInput">
 
-				<br><h4 id="ctaTest">Take the test!</h4><br>
+					<br><h4 id="ctaTest">Take the test!</h4><br>
 
-				<div class="btn-group"  data-toggle="buttons" id="hairColor">
-					<h5>My hair is:</h5>
-					<label class="btn btnHair " id="hairColor1">
-						<input autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
-	  				</label>
-	  				<label class="btn btnHair " id="hairColor2" >
-						<input autocomplete="off" type="radio" name="red" class="input-hair">red
-	  				</label>
-	  				<label class="btn btnHair " id="hairColor3">
-						<input autocomplete="off" type="radio" name="brunette" class="input-hair">brunette
-	  				</label>
-	  				<label class="btn btnHair ">
-						<input id="hairColor4" autocomplete="off" type="radio" name="black" class="input-hair">black
-	  				</label>
-	  			</div>
+					<div class="btn-group"  data-toggle="buttons" id="hairColor">
+						<h5>My hair is:</h5>
+						<label class="btn btnHair " id="hairColor1">
+							<input autocomplete="off" type="radio" name="blonde" class="input-hair">blonde
+		  				</label>
+		  				<label class="btn btnHair " id="hairColor2" >
+							<input autocomplete="off" type="radio" name="red" class="input-hair">red
+		  				</label>
+		  				<label class="btn btnHair " id="hairColor3">
+							<input autocomplete="off" type="radio" name="brunette" class="input-hair">brunette
+		  				</label>
+		  				<label class="btn btnHair ">
+							<input id="hairColor4" autocomplete="off" type="radio" name="black" class="input-hair">black
+		  				</label>
+		  			</div>
 
-	  			<div class="btn-group" data-toggle="buttons" id="eyeColor">
-					<h5>My eyes are:</h5>
-					<label class="btn btnEye">
-						<input id="eyeColor1" autocomplete="off" type="radio" name="brown" class="input-eye">brown
-	  				</label>
-	  				<label class="btn btnEye">
-						<input id="eyeColor2" autocomplete="off" type="radio" name="blue" class="input-eye">blue
-	  				</label>
-	  				<label class="btn btnEye">
-						<input id="eyeColor3" autocomplete="off" type="radio" name="green" class="input-eye">green
-	  				</label>
-	  			</div>
+		  			<div class="btn-group" data-toggle="buttons" id="eyeColor">
+						<h5>My eyes are:</h5>
+						<label class="btn btnEye">
+							<input id="eyeColor1" autocomplete="off" type="radio" name="brown" class="input-eye">brown
+		  				</label>
+		  				<label class="btn btnEye">
+							<input id="eyeColor2" autocomplete="off" type="radio" name="blue" class="input-eye">blue
+		  				</label>
+		  				<label class="btn btnEye">
+							<input id="eyeColor3" autocomplete="off" type="radio" name="green" class="input-eye">green
+		  				</label>
+		  			</div>
 
-	  			<div class="btn-group" data-toggle="buttons" id="skinTone">
-					<h5>My skin tone is:<sup><a id="helpBtn"  class="btn btn-xs"type="button" data-toggle="popover" data-trigger="hover" title="How do you find out what skin tone you have?" data-content="Do the vein test! If the veins in your arm appear blue, you are cool toned and if they are greenish, you are warm toned."><i class="fa fa-question-circle"></i></a></sup></h5>
-					<label class="btn btnSkin">
-						<input id="skinTone1" autocomplete="off" type="radio" name="warm" class="input-skin">warm
-	  				</label>
-	  				<label class="btn btnSkin">
-						<input id="skinTone2" autocomplete="off" type="radio" name="cool" class="input-skin">cool
-	  				</label>
-	  			</div>
+		  			<div class="btn-group" data-toggle="buttons" id="skinTone">
+						<h5>My skin tone is:<sup><a id="helpBtn"  class="btn btn-xs"type="button" data-toggle="popover" data-trigger="hover" title="How do you find out what skin tone you have?" data-content="Do the vein test! If the veins in your arm appear blue, you are cool toned and if they are greenish, you are warm toned."><i class="fa fa-question-circle"></i></a></sup></h5>
+						<label class="btn btnSkin">
+							<input id="skinTone1" autocomplete="off" type="radio" name="warm" class="input-skin">warm
+		  				</label>
+		  				<label class="btn btnSkin">
+							<input id="skinTone2" autocomplete="off" type="radio" name="cool" class="input-skin">cool
+		  				</label>
+		  			</div>
 
-				
-		</form> <!--./ userInput-->
+					
+			</form> <!--./ userInput-->
 
-		<!-- Button trigger modal -->
-				<div class="btn-group center-block" id="submit">
-					<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal"><i class="fa fa-magic"></i> Let the magic happen</button>
-				</div>
-	</div> <!--./ container-->
+			<!-- Button trigger modal -->
+					<div class="btn-group center-block" id="submit">
+						<button type="button" onclick="getInfo()" class="btn" id="submitBtn"data-toggle="modal" data-target="#resultModal"><i class="fa fa-magic"></i> Let the magic happen</button>
+					</div>
+		</div> <!--./ container-->
+	</div> <!--./ wrapper--> 
 		
 
 		<!-- Modal -->
-		<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="resultLabel"></h4>
-		      </div>
-		      <div class="modal-body" id="resultBody">
-		      	<div id="error" class="result-option">Did you tell us your hair color, your eye color and the tone of your skin?</div>
+	<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="resultLabel"></h4>
+	      </div>
+
+	     	<div class="modal-body" id="resultBody">
+	      		<div id="error" class="result-option">
+	      			<div>
+	      				<img src="img/error.gif" width="100%">
+	      			</div>
+	      			<h5>Did you tell us your hair color, your eye color and the tone of your skin? <br>Please double check!<br><h5>
+	      		</div>
 
 		      	<div id="bl-br-c" class="result-option">
-		      		<p>You should avoid orange or earthy colors and instead wear dusty colors in blue or rose tones. Silver jewelry looks usually better than gold. With your cool skin tone, you can pull of jet-black or bright white. You get compliments in red, bold shades and jewel tones like emerald</p>
+					<div class="media">
+					  <div class="media-left">
+					      <i class="fa fa-check-circle-o"></i>
+					  </div>
+					  <div class="media-body">
+					    <h5 class="media-heading">Media heading</h5>
+					    <p>You should avoid orange or earthy colors and instead wear dusty colors in blue or rose tones. Silver jewelry looks usually better than gold. With your cool skin tone, you can pull of jet-black or bright white. You get compliments in red, bold shades and jewel tones like emerald</p>
+					  </div>
+					</div>
+		      		
 		      	</div>
 
 		      	<div id="bl-br-w" class="result-option">
@@ -213,18 +231,130 @@
 		      		<p>If you are interested in working with a stylist on choosing the most flattering clothes, visit <a href="http://www.fashionlovemaker.com/" target="_blank"> wwww.fashionlovemaker.com</a> and find a stylist near you!</p>
 		      	</div>
 
-		      </div> <!--/. resultBody-->
-		      <div class="modal-footer">
-		      	
-		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultBtn"><i class="fa fa-times-circle"></i> </button>
+	      		</div> <!--/. resultBody-->
+
+		      	<div class="modal-footer">
+		        <button type="submit" onclick="clearForm()" class="btn btn-default" data-dismiss="modal" id="resultBtn"></button>
 
 		        <h5 id="referLink"><a href="http://www.fashionlovemaker.com/" target="_blank">Yes, i want to work with a stylist!</a></h5>
-		        
-		      </div>
-		    </div>
-		  </div>
-		</div>
+		      </div> 
+
+	    	</div> <!--./ modal content-->
+		</div> <!--./ modal dialogue-->
+	</div> <!--./ modal-->
+
+	<!-- bg animation -->
+
+	<div id="bg">
+		<svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  xml:space="preserve" height= "1000px" width="100%">
+		  <g id="home">
+		    <defs>
+		      <rect id="masque" y="0.4" width="1820" height="1080" />
+		    </defs>
+		    <clipPath id="cache">
+		      <use xlink:href="#masque" style="overflow:visible;" />
+		    </clipPath>
+		    <g id="light-blue">
+		      <line id="XMLID_988_" class="st1" x1="1602.8" y1="985.7" x2="1448.4" y2="1140.1" />
+		      <line id="XMLID_1343_" class="st1" x1="-108.6" y1="953.2" x2="45.8" y2="798.8" />
+		      <line id="XMLID_1340_" class="st1" x1="100" y1="587.7" x2="-54.4" y2="742.1" />
+		      <line id="XMLID_1336_" class="st1" x1="327.2" y1="517.4" x2="481.6" y2="362.9" />
+		      <line id="XMLID_1333_" class="st1" x1="535.8" y1="151.9" x2="381.4" y2="306.3" />
+		      <line id="XMLID_1329_" class="st1" x1="763" y1="81.6" x2="917.4" y2="-72.9" />
+		      <line id="XMLID_1276_" class="st1" x1="137.4" y1="930.1" x2="-17" y2="1084.5" />
+		      <line id="XMLID_1272_" class="st1" x1="364.6" y1="859.8" x2="519" y2="705.4" />
+		      <line id="XMLID_1269_" class="st1" x1="573.2" y1="494.3" x2="418.8" y2="648.7" />
+		      <line id="XMLID_1265_" class="st1" x1="800.4" y1="424" x2="954.8" y2="269.6" />
+		      <line id="XMLID_1262_" class="st1" x1="1009" y1="58.5" x2="854.6" y2="212.9" />
+		      <line id="XMLID_1208_" class="st1" x1="402" y1="1202.3" x2="556.4" y2="1047.9" />
+		      <line id="XMLID_1205_" class="st1" x1="610.6" y1="836.8" x2="456.2" y2="991.2" />
+		      <line id="XMLID_1198_" class="st1" x1="1046.4" y1="401" x2="892" y2="555.4" />
+		      <line id="XMLID_1194_" class="st1" x1="1273.6" y1="330.7" x2="1428" y2="176.2" />
+		      <line id="XMLID_1191_" class="st1" x1="1482.2" y1="-34.8" x2="1327.8" y2="119.6" />
+		      <line id="XMLID_1137_" class="st1" x1="883.9" y1="1100.2" x2="1038.3" y2="945.8" />
+		      <line id="XMLID_1130_" class="st1" x1="1319.7" y1="664.4" x2="1474.1" y2="510" />
+		      <line id="XMLID_1127_" class="st1" x1="1528.3" y1="298.9" x2="1373.9" y2="453.3" />
+		      <line id="XMLID_1123_" class="st1" x1="1755.5" y1="228.6" x2="1909.9" y2="74.2" />
+		      <line id="XMLID_1120_" class="st1" x1="1964.1" y1="-136.9" x2="1809.7" y2="17.5" />
+		      <line id="XMLID_1070_" class="st1" x1="1129.9" y1="1077.2" x2="975.5" y2="1231.6" />
+		      <line id="XMLID_1066_" class="st1" x1="1357.1" y1="1006.8" x2="1511.5" y2="852.4" />
+		      <line id="XMLID_1063_" class="st1" x1="1565.7" y1="641.4" x2="1411.3" y2="795.8" />
+		      <line id="XMLID_1059_" class="st1" x1="1792.9" y1="571" x2="1947.3" y2="416.6" />
+		      <line id="XMLID_1386_" class="st1" x1="217.2" y1="94.3" x2="371.6" y2="-60.1" />
+		      <line id="XMLID_1201_" class="st1" x1="837.8" y1="766.5" x2="992.2" y2="612" />
+		      <line id="XMLID_1134_" class="st1" x1="1092.5" y1="734.7" x2="938.1" y2="889.1" />
+		    </g>
+		    <g id="red">
+		      <line id="XMLID_987_" class="st2" x1="1766.3" y1="974.8" x2="1611.8" y2="1129.2" />
+		      <line id="XMLID_983_" class="st2" x1="1666.6" y1="926.3" x2="1821" y2="771.8" />
+		      <line id="XMLID_1339_" class="st2" x1="263.4" y1="576.8" x2="109" y2="731.2" />
+		      <line id="XMLID_1335_" class="st2" x1="163.8" y1="528.3" x2="318.2" y2="373.8" />
+		      <line id="XMLID_1332_" class="st2" x1="699.2" y1="141" x2="544.8" y2="295.4" />
+		      <line id="XMLID_1328_" class="st2" x1="599.6" y1="92.5" x2="754" y2="-62" />
+		      <line id="XMLID_1275_" class="st2" x1="300.8" y1="919.2" x2="146.4" y2="1073.7" />
+		      <line id="XMLID_1271_" class="st2" x1="201.2" y1="870.7" x2="355.6" y2="716.3" />
+		      <line id="XMLID_1268_" class="st2" x1="736.6" y1="483.4" x2="582.2" y2="637.8" />
+		      <line id="XMLID_1264_" class="st2" x1="637" y1="434.9" x2="791.4" y2="280.5" />
+		      <line id="XMLID_1261_" class="st2" x1="1172.4" y1="47.6" x2="1018" y2="202" />
+		      <line id="XMLID_1204_" class="st2" x1="774" y1="825.9" x2="619.6" y2="980.3" />
+		      <line id="XMLID_1200_" class="st2" x1="674.4" y1="777.4" x2="828.8" y2="622.9" />
+		      <line id="XMLID_1197_" class="st2" x1="1209.8" y1="390.1" x2="1055.4" y2="544.5" />
+		      <line id="XMLID_1193_" class="st2" x1="1110.2" y1="341.6" x2="1264.6" y2="187.1" />
+		      <line id="XMLID_1190_" class="st2" x1="1645.6" y1="-45.7" x2="1491.2" y2="108.7" />
+		      <line id="XMLID_1136_" class="st2" x1="720.5" y1="1111.1" x2="874.9" y2="956.7" />
+		      <line id="XMLID_1133_" class="st2" x1="1255.9" y1="723.8" x2="1101.5" y2="878.2" />
+		      <line id="XMLID_1129_" class="st2" x1="1156.3" y1="675.3" x2="1310.7" y2="520.9" />
+		      <line id="XMLID_1126_" class="st2" x1="1691.7" y1="288" x2="1537.3" y2="442.4" />
+		      <line id="XMLID_1122_" class="st2" x1="1592.1" y1="239.5" x2="1746.5" y2="85.1" />
+		      <line id="XMLID_1065_" class="st2" x1="1193.7" y1="1017.7" x2="1348.1" y2="863.3" />
+		      <line id="XMLID_1062_" class="st2" x1="1729.1" y1="630.5" x2="1574.7" y2="784.9" />
+		      <line id="XMLID_1058_" class="st2" x1="1629.5" y1="581.9" x2="1783.9" y2="427.5" />
+		      <line id="XMLID_1389_" class="st2" x1="153.4" y1="153.7" x2="-1" y2="308.2" />
+		      <line id="XMLID_1385_" class="st2" x1="53.7" y1="105.2" x2="208.2" y2="-49.2" />
+		      <line id="XMLID_1069_" class="st2" x1="1293.3" y1="1066.3" x2="1138.9" y2="1220.7" />
+		      <line id="XMLID_1207_" class="st2" x1="238.5" y1="1213.2" x2="393" y2="1058.7" />
+		      <line id="XMLID_1257_" class="st2" x1="1072.8" y1="-0.9" x2="1227.2" y2="-155.3" />
+		    </g>
+		    <g id="blue">
+		      <line id="XMLID_992_" class="st3" x1="1198.1" y1="1242.2" x2="1507" y2="933.4" />
+		      <line id="XMLID_985_" class="st3" x1="1633.9" y1="806.4" x2="1942.8" y2="497.6" />
+		      <line id="XMLID_921_" class="st3" x1="1671.3" y1="1148.9" x2="1980.2" y2="840" />
+		      <line id="XMLID_1344_" class="st3" x1="-304.7" y1="844.2" x2="4.1" y2="535.4" />
+		      <line id="XMLID_1341_" class="st3" x1="296.1" y1="696.6" x2="-12.7" y2="1005.5" />
+		      <line id="XMLID_1337_" class="st3" x1="131.1" y1="408.4" x2="439.9" y2="99.6" />
+		      <line id="XMLID_1334_" class="st3" x1="731.9" y1="260.8" x2="423.1" y2="569.7" />
+		      <line id="XMLID_1327_" class="st3" x1="1167.7" y1="-175" x2="858.9" y2="133.9" />
+		      <line id="XMLID_1280_" class="st3" x1="-267.3" y1="1186.7" x2="41.5" y2="877.8" />
+		      <line id="XMLID_1277_" class="st3" x1="333.5" y1="1039.1" x2="24.7" y2="1347.9" />
+		      <line id="XMLID_1273_" class="st3" x1="168.5" y1="750.9" x2="477.3" y2="442" />
+		      <line id="XMLID_1270_" class="st3" x1="769.3" y1="603.3" x2="460.5" y2="912.1" />
+		      <line id="XMLID_1266_" class="st3" x1="604.3" y1="315.1" x2="913.1" y2="6.2" />
+		      <line id="XMLID_1263_" class="st3" x1="1205.1" y1="167.5" x2="896.3" y2="476.3" />
+		      <line id="XMLID_1256_" class="st3" x1="1640.9" y1="-268.3" x2="1332.1" y2="40.5" />
+		      <line id="XMLID_1209_" class="st3" x1="205.9" y1="1093.3" x2="514.7" y2="784.5" />
+		      <line id="XMLID_1206_" class="st3" x1="806.7" y1="945.7" x2="497.9" y2="1254.6" />
+		      <line id="XMLID_1202_" class="st3" x1="641.7" y1="657.5" x2="950.5" y2="348.7" />
+		      <line id="XMLID_1199_" class="st3" x1="1242.5" y1="509.9" x2="933.7" y2="818.8" />
+		      <line id="XMLID_1195_" class="st3" x1="1077.5" y1="221.7" x2="1386.3" y2="-87.1" />
+		      <line id="XMLID_1192_" class="st3" x1="1678.3" y1="74.1" x2="1369.5" y2="383" />
+		      <line id="XMLID_1138_" class="st3" x1="687.8" y1="991.3" x2="996.6" y2="682.4" />
+		      <line id="XMLID_1135_" class="st3" x1="1288.6" y1="843.7" x2="979.8" y2="1152.5" />
+		      <line id="XMLID_1131_" class="st3" x1="1123.6" y1="555.4" x2="1432.4" y2="246.6" />
+		      <line id="XMLID_1128_" class="st3" x1="1724.4" y1="407.9" x2="1415.6" y2="716.7" />
+		      <line id="XMLID_1124_" class="st3" x1="1559.4" y1="119.6" x2="1868.2" y2="-189.2" />
+		      <line id="XMLID_1074_" class="st3" x1="725.2" y1="1333.7" x2="1034" y2="1024.9" />
+		      <line id="XMLID_1067_" class="st3" x1="1161" y1="897.9" x2="1469.8" y2="589.1" />
+		      <line id="XMLID_1064_" class="st3" x1="1761.8" y1="750.3" x2="1453" y2="1059.1" />
+		      <line id="XMLID_1060_" class="st3" x1="1596.8" y1="462.1" x2="1905.6" y2="153.2" />
+		      <line id="XMLID_1455_" class="st3" x1="148.7" y1="-68.9" x2="-160.2" y2="240" />
+		      <line id="XMLID_1391_" class="st3" x1="186.1" y1="273.6" x2="-122.8" y2="582.4" />
+		      <line id="XMLID_1384_" class="st3" x1="621.9" y1="-162.2" x2="313" y2="146.6" />
+		    </g>
+		  </g>
+		</svg>
 	</div>
+
+	<!-- /. bg animation -->
 
 	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
