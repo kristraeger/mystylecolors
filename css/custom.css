@@ -1,409 +1,364 @@
 body {
-	font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
-	background: transparent;
+    font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
+    background: transparent;
+}
+a, 
+footer a {
+    color: #4939ed;
+    text-decoration: none;
 }
 
-a {
-	color: #4939ed;
-	text-decoration: none;
+a:hover,
+footer a:hover {
+    color: #4939ed;
 }
 
-h1, h4, h5 , .popover{
-	font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
-	color: black;
-	background-color: white;
-	font-weight: 400;
-	line-height: 2em;
-	width: 100%;
-	letter-spacing: 0.1em;
-	background-color: transparent;
-}
 
+h1,
+h4,
+h5,
 .popover {
-	background-color: white;
+    font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+    line-height: 2em;
+    width: 100%;
+    letter-spacing: 0.1em;
+    background-color: transparent;
 }
-
+.popover {
+    background-color: white;
+}
 h1 {
-	font-size: 2.5em;
+    font-size: 2.5em;
 }
-
 h4 {
-	color: white;
-	background-color: black;
-	font-size: 17px;
+    color: white;
+    background-color: black;
+    font-size: 17px;
 }
-
 h5 {
-	text-align: left;
+    text-align: left;
 }
-
 #ctaTest {
-	display: inline-block;
-	letter-spacing: 0.3em;
-	text-align: center;
-	cursor: default;
+    display: inline-block;
+    letter-spacing: 0.3em;
+    text-align: center;
+    cursor: default;
 }
-
-#submitBtn, #resultBtn{
-	color: white;
-	background-color: black;
-	border: 1px solid gray;
-	border-style: double;]
-}
-
-#submitBtn {
-	margin: 30px auto;
-	min-height: 1px;
-	width: 50%;
-}
-
+#submitBtn,
 #resultBtn {
-	width: 20%;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    border-style: double;
+    ]
 }
-
-#submitBtn:hover, #resultBtn:hover  {
-	letter-spacing: 0.05em;
-	background-color: gray;
+#submitBtn {
+    margin: 30px auto;
+    min-height: 1px;
+    width: 50%;
 }
-
-#submitBtn:hover {
-	transition: letter-spacing 0.1s;
-	transition: background-color 0.05s;
+#resultBtn {
+    width: 20%;
 }
-
+#submitBtn:hover,
 #resultBtn:hover {
-	transition: letter-spacing 0.2s;
-	transition: background-color 0.1s;
+    letter-spacing: 0.05em;
+    background-color: gray;
 }
-
+#submitBtn:hover {
+    transition: letter-spacing 0.1s;
+    transition: background-color 0.05s;
+}
+#resultBtn:hover {
+    transition: letter-spacing 0.2s;
+    transition: background-color 0.1s;
+}
 #submitBtn:focus {
-	outline: none;
+    outline: none;
 }
-
-.popover{
-	width: 276px;
+.popover {
+    width: 276px;
 }
-
-.popover, .popover-title {
-	font-size: 10px;
+.popover,
+.popover-title {
+    font-size: 10px;
 }
-
-.row-centered {
+header {
+    margin-top: 50px;
     text-align: center;
 }
-
-.col-centered {
-display: inline-block;
-float: none 
-}
-
-header {
-	margin-top: 50px;
-	text-align: center;
-}
-
-header, #userInput, #submitBtn, #submit {
-	width: 50%;
-}
-
+header,
+#userInput,
+#submitBtn,
 #submit {
-	text-align: center;
+    width: 50%;
 }
-
+#submit {
+    text-align: center;
+}
 header p {
-	text-align: left;
-	border: 1px solid black;
-	padding: 10px 5px;
-	background-color: white;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px 5px;
+    background-color: white;
 }
-
 #userInput .btn-group>.btn {
-	text-align: center;
-	border: 1px solid black;
+    text-align: center;
+    border: 1px solid black;
 }
-
 .btn-group {
-	display: block;
-	text-align: center;
+    display: block;
+    text-align: center;
 }
-
 .btn-group>.btn {
-	float: none;
-	background-color: white;
+    float: none;
+    background-color: white;
 }
-
 .btn {
-	margin: 5px 0;
-
+    margin: 5px 0;
 }
-
-.btn,.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-	border-radius: 0px;
+.btn,
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0px;
 }
-
 .modal-title {
-	text-align: center;
+    text-align: center;
 }
-
-.btnHair, .btnEye, .btnSkin {
-	display: inline-block;
-	box-sizing: border-box;	
-	margin-right:0;
-	margin-left: 0;
-}
-
-.btnHair {
-	width: 24.6%;
-}
-
-.btnEye {
-	width: 32.7%;
-}
-
+.btnHair,
+.btnEye,
 .btnSkin {
-	width: 49.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
 }
-
+.btnHair {
+    width: 24.6%;
+}
+.btnEye {
+    width: 32.7%;
+}
+.btnSkin {
+    width: 49.5%;
+}
 #helpBtn {
-	color: black;
+    color: black;
 }
-
-.btn.active, .btn.active:hover {
-	font-weight: 700;
-	background-color: black;
-	color: white;
+#helpBtn:hover {
+    background-color: transparent;
 }
-
+.btn.active,
+.btn:hover {
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
 .modal-content {
-	border-radius: 0;
+    border-radius: 0;
 }
-
 .modal-footer {
-	text-align: center;
+    text-align: center;
 }
-
 #referLink {
-	font-size: 12px;
-	text-align: center;
+    font-size: 12px;
+    text-align: center;
 }
-
-.result-option, .standard {
-	padding-left: 15px;
-	padding-right: 15px;
+.result-option,
+.standard {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
-.standard h5, .result-tags h5 {
-	font-weight: 700
-}
-
+.standard h5,
 .result-tags h5 {
-	background-color: white;
-	display: inline;
-	margin-top:8px;
-	padding-left: 2px;
+    font-weight: 700
 }
-
+.result-tags h5 {
+    background-color: white;
+    display: inline;
+    margin-top: 8px;
+    padding-left: 2px;
+}
 .result-tags {
-	background-image: url("../img/hello2.gif");
-	margin-bottom: 20px;
-	height: 115px;
-
+    background-image: url("../img/hello2.gif");
+    margin-bottom: 20px;
+    height: 115px;
 }
-
 .box {
-	padding-left: 5px;
+    padding-left: 5px;
 }
-
+footer,
+footer a {
+    font-size: 10px;
+    background-color: transparent;
+}
 /*bg animation*/
 
 #wrapper {
-	position: absolute;
-	z-index: 1;
-	width: 100%;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
-
 #bg {
-	position: absolute;
-	top: -10px;
-	width:100%;
-	
+    position: absolute;
+    top: -10px;
+    width: 100%;
 }
-
 #error h5 {
-	text-align: center;
+    text-align: center;
 }
-
-
 #home {
-  clip-path: url(#cache);
+    clip-path: url(#cache);
 }
-
 #red {
-  fill: none;
-  opacity: 0.15;
-  stroke: #CE1B5F;
-  stroke-width: 12;
-  stroke-miterlimit: 10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+    fill: none;
+    opacity: 0.15;
+    stroke: #FCBA04;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
 #blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 12;
-  stroke-miterlimit: 10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+    fill: none;
+    opacity: 0.15;
+    stroke: #4939ED;
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
 #light-blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 6;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 800;
-  animation: draw 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+    fill: none;
+    opacity: 0.15;
+    stroke: #3A4F41;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
 @keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
-
 @keyframes show {
-  0% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0.15;
-  }
+    0% {
+        opacity: 0.15;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.15;
+    }
 }
-
-
-
 /*media queries*/
 
 @media (max-width: 1258px) {
-
-.btnEye {
-	width: 32.5%;
-	}
-
+    .btnEye {
+        width: 32.5%;
+    }
+}
 @media (max-width: 1186px) {
-	.btnHair {
-	width: 24.3%;
-	}
-
+    .btnHair {
+        width: 24.3%;
+    }
+}
 @media (max-width: 768px) {
-	header, #userInput, #submit {
-	width: 80%;
-	}
-
-	#submitBtn {
-		width: 50%;
-	}
+    header,
+    #userInput,
+    #submit {
+        width: 80%;
+    }
+    #submitBtn {
+        width: 50%;
+    }
 }
-
 @media (max-width: 690px) {
-	.btnHair {
-		width: 24.1%
-	}
+    .btnHair {
+        width: 24.1%
+    }
 }
-
 @media (max-width: 642px) {
-	.btnSkin {
-		width: 49%
-	}
-
-	.btnHair {
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-
-	#submitBtn {
-		width: 100%;
-	}
+    .btnSkin {
+        width: 49%
+    }
+    .btnHair {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #submitBtn {
+        width: 100%;
+    }
 }
-}
-
 @media (max-width: 543px) {
-	.btnHair {
-		width: 24%;
-	}
+    .btnHair {
+        width: 24%;
+    }
 }
-
 /*small desktop and iPhone 6S*/
 
 @media (max-width: 414px) {
-	.popover {
-		width: 200px;
-	}
-	header, #userInput, .btn-group, #submit, #submitBtn, #resultBtn {
-	width: 100%;
-	}
-
-	h1 {
-		font-size: 1.5em;
-		line-height: 1.1em;
-	}
-
+    .popover {
+        width: 200px;
+    }
+    header,
+    #userInput,
+    .btn-group,
+    #submit,
+    #submitBtn,
+    #resultBtn {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+        line-height: 1.1em;
+        margin-bottom: 1px;
+    }
+    header {
+        margin-top: 25px;
+        margin-bottom: 1px;
+    }
 }
-
 /*iphone 6*/
 
 @media (max-width: 375px) {
-	.result-option, .standard {
-	padding-left: 1px;
-	padding-right: 1px;
-	}
-	#ctaTest {
-		cursor: pointer;
-	}
+    .result-option,
+    .standard {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    #ctaTest {
+        cursor: pointer;
+    }
 }
-
 /*iPhone 5*/
 
 @media (max-width: 320px) {
-	.popover {
-		width: 150px;
-	}
-
-	.btnEye {
-		width: 32%;
-	}
-
-	#userInput .btn {
-		font-size: 10px;
-	}
-
-	.result-tags {
-		height: 150px;
-	}
-
-	.result-tags h5 {
-		font-size: 12px;
-	}
-
+    .popover {
+        width: 150px;
+    }
+    .btnEye {
+        width: 32%;
+    }
+    #userInput .btn {
+        font-size: 10px;
+    }
+    .result-tags {
+        height: 150px;
+    }
+    .result-tags h5 {
+        font-size: 12px;
+    }
 }
-
-
-
-
-
-
-
